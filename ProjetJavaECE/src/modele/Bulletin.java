@@ -16,18 +16,33 @@ public class Bulletin {
 	private Inscription inscription;
 	private String appreciation;
 	
-	
-	public Bulletin() {
+    /**
+     *
+     */
+    public Bulletin() {
 
 	}
 	
-	public Bulletin(Trimestre trimestre, Inscription inscription, String appreciation) {
+    /**
+     *
+     * @param trimestre
+     * @param inscription
+     * @param appreciation
+     */
+    public Bulletin(Trimestre trimestre, Inscription inscription, String appreciation) {
 		this.trimestre = trimestre;
 		this.inscription = inscription;
 		this.appreciation = appreciation;
 	}
 	
-	public Bulletin(Integer id, Trimestre trimestre, Inscription inscription, String appreciation) {
+    /**
+     *
+     * @param id
+     * @param trimestre
+     * @param inscription
+     * @param appreciation
+     */
+    public Bulletin(Integer id, Trimestre trimestre, Inscription inscription, String appreciation) {
 	    this(trimestre,inscription,appreciation);
 		this.id = id;
 	}

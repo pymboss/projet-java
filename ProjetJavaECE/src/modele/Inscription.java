@@ -15,17 +15,30 @@ public class Inscription {
 	private Classe classe;
 	private Personne etudiant;
 
-	
-	public Inscription()
+    /**
+     *
+     */
+    public Inscription()
 	{
 	}
 	
-	public Inscription(Classe classe, Personne etudiant) {
+    /**
+     *
+     * @param classe
+     * @param etudiant
+     */
+    public Inscription(Classe classe, Personne etudiant) {
 		this.classe = classe;
 		this.etudiant = etudiant;
 	}
 	
-	public Inscription(Integer id, Classe classe, Personne etudiant) {
+    /**
+     *
+     * @param id
+     * @param classe
+     * @param etudiant
+     */
+    public Inscription(Integer id, Classe classe, Personne etudiant) {
 		this(classe ,etudiant);
 		this.id = id;
 	}

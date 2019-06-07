@@ -16,20 +16,34 @@ public class DetailBulletin {
 	private Enseignement enseignement;
 	private String appreciation;
 	
-	
-		
-	public DetailBulletin() {
+    /**
+     *
+     */
+    public DetailBulletin() {
 		super();
 	
 	}
 	
-	public DetailBulletin(Bulletin bulletin, Enseignement enseignement, String appreciation) {
+    /**
+     *
+     * @param bulletin
+     * @param enseignement
+     * @param appreciation
+     */
+    public DetailBulletin(Bulletin bulletin, Enseignement enseignement, String appreciation) {
 		this.bulletin = bulletin;
 		this.enseignement = enseignement;
 		this.appreciation = appreciation;
 	}
 	
-	public DetailBulletin(Integer id, Bulletin bulletin, Enseignement enseignement, String appreciation) {
+    /**
+     *
+     * @param id
+     * @param bulletin
+     * @param enseignement
+     * @param appreciation
+     */
+    public DetailBulletin(Integer id, Bulletin bulletin, Enseignement enseignement, String appreciation) {
 		this(bulletin,enseignement,appreciation);
 		this.id = id;
 	}

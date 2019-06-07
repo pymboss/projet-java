@@ -16,17 +16,32 @@ public class Enseignement {
 	private Discipline discipline ;
 	private Personne enseignant;
 	
-	
-	public Enseignement() {
+    /**
+     *
+     */
+    public Enseignement() {
 	}
 
-	public Enseignement(Classe classe, Discipline discipline, Personne enseignant) {
+    /**
+     *
+     * @param classe
+     * @param discipline
+     * @param enseignant
+     */
+    public Enseignement(Classe classe, Discipline discipline, Personne enseignant) {
 		this.classe = classe;
 		this.discipline = discipline;
 		this.enseignant = enseignant;
 	}
 
-	public Enseignement(Integer id, Classe classe, Discipline discipline, Personne enseignant) {
+    /**
+     *
+     * @param id
+     * @param classe
+     * @param discipline
+     * @param enseignant
+     */
+    public Enseignement(Integer id, Classe classe, Discipline discipline, Personne enseignant) {
 		this(classe,discipline,enseignant);
 		this.id = id;
 	}

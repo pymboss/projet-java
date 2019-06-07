@@ -19,17 +19,30 @@ public class AnneeScolaire {
 	private Date dateDebut;
 	private Date dateFin;
 	
-	
-	public AnneeScolaire() {
+    /**
+     *
+     */
+    public AnneeScolaire() {
 
 	}	
 
-	public AnneeScolaire (Date dateDebut, Date dateFin) {
+    /**
+     *
+     * @param dateDebut
+     * @param dateFin
+     */
+    public AnneeScolaire (Date dateDebut, Date dateFin) {
 		this.dateDebut = dateDebut;
 		this.dateFin = dateFin;
 	}
 	
-	public AnneeScolaire(Integer id, Date dateDebut, Date dateFin) {
+    /**
+     *
+     * @param id
+     * @param dateDebut
+     * @param dateFin
+     */
+    public AnneeScolaire(Integer id, Date dateDebut, Date dateFin) {
 		this(dateDebut,dateFin);
 		this.id = id;
 		

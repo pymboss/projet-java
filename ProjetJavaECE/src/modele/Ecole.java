@@ -14,14 +14,26 @@ public class Ecole {
         private Integer id;
 	private String nom;
 	
-	public Ecole() {
+    /**
+     *
+     */
+    public Ecole() {
 	}
 	
-	public Ecole(String nom) {
+    /**
+     *
+     * @param nom
+     */
+    public Ecole(String nom) {
 		this.nom = nom;
 	}
 	
-	public Ecole(Integer id, String nom) {
+    /**
+     *
+     * @param id
+     * @param nom
+     */
+    public Ecole(Integer id, String nom) {
 		this.id = id;
 		this.nom = nom;
 	}

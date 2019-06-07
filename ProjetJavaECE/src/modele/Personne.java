@@ -16,20 +16,33 @@ public class Personne {
 	private String prenom;
 	private String type;
 	
-	
-	
-	public Personne() {
+    /**
+     *
+     */
+    public Personne() {
 	}
 
-	
-	public Personne(String prenom, String nom, String type) {
+    /**
+     *
+     * @param prenom
+     * @param nom
+     * @param type
+     */
+    public Personne(String prenom, String nom, String type) {
 		this.prenom = prenom;
 		this.nom = nom;
 		this.type = type;
 
 	}
 
-	public Personne(Integer id, String prenom, String nom, String type) {
+    /**
+     *
+     * @param id
+     * @param prenom
+     * @param nom
+     * @param type
+     */
+    public Personne(Integer id, String prenom, String nom, String type) {
 	    this(prenom,nom,type);
 		this.id = id; 
 	}
@@ -88,13 +101,20 @@ public class Personne {
 		return nom;
 	}
 	
-	
-	public boolean isEtudiant()
+    /**
+     *
+     * @return
+     */
+    public boolean isEtudiant()
 	{
 		return (this.type.equals("P")) ?false:true;
 	}
 	
-	@Override
+    /**
+     *
+     * @return
+     */
+    @Override
 	public String toString() {
 	    return id + " " + nom + " "+ prenom;
 	}

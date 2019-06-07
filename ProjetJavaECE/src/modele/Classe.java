@@ -17,18 +17,35 @@ public class Classe {
 	private Niveau niveau;
 	private AnneeScolaire anneeScolaire;
 	
-	
-	public Classe() {
+    /**
+     *
+     */
+    public Classe() {
 	}
 	
-	public Classe( String nom,Ecole ecole, Niveau niveau, AnneeScolaire anneeScolaire) {
+    /**
+     *
+     * @param nom
+     * @param ecole
+     * @param niveau
+     * @param anneeScolaire
+     */
+    public Classe( String nom,Ecole ecole, Niveau niveau, AnneeScolaire anneeScolaire) {
 		this.nom = nom;
 		this.ecole = ecole;
 		this.niveau = niveau;
 		this.anneeScolaire = anneeScolaire;
 	}
 
-	public Classe(Integer id, String nom ,Ecole ecole, Niveau niveau, AnneeScolaire anneeScolaire) {
+    /**
+     *
+     * @param id
+     * @param nom
+     * @param ecole
+     * @param niveau
+     * @param anneeScolaire
+     */
+    public Classe(Integer id, String nom ,Ecole ecole, Niveau niveau, AnneeScolaire anneeScolaire) {
 		this(nom,ecole,niveau,anneeScolaire);
 		this.id = id;
 	}
@@ -109,7 +126,11 @@ public class Classe {
 		this.nom = nom;
 	}
 	
-	@Override
+    /**
+     *
+     * @return
+     */
+    @Override
 	public String toString() {
 	    return id + " " + nom;
 	}

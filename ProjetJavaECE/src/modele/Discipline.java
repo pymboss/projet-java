@@ -14,16 +14,27 @@ public class Discipline {
         private Integer id;
 	private String nom;
 	
-	
-	
-	public Discipline() {
+    /**
+     *
+     */
+    public Discipline() {
 
 	}
-	public Discipline(String nom) {
+
+    /**
+     *
+     * @param nom
+     */
+    public Discipline(String nom) {
 		this.nom = nom;
 	}
 	
-	public Discipline(Integer id, String nom) {
+    /**
+     *
+     * @param id
+     * @param nom
+     */
+    public Discipline(Integer id, String nom) {
 		this.id = id;
 		this.nom = nom;
 	}

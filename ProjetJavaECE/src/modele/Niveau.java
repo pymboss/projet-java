@@ -14,17 +14,26 @@ public class Niveau {
         private Integer id;
 	private String nom;
 	
-	
-	public Niveau() {
+    /**
+     *
+     */
+    public Niveau() {
 	}
 
-
-	public Niveau(String nom) {
+    /**
+     *
+     * @param nom
+     */
+    public Niveau(String nom) {
 		this.nom = nom;
 	}
 
-	
-	public Niveau(Integer id, String nom) {
+    /**
+     *
+     * @param id
+     * @param nom
+     */
+    public Niveau(Integer id, String nom) {
 		this.id = id;
 		this.nom = nom;
 	}

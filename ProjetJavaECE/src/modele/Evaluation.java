@@ -16,19 +16,32 @@ public class Evaluation {
 	private Integer note;
 	private String appreciation;
 	
-	
-	public Evaluation() {
+    /**
+     *
+     */
+    public Evaluation() {
 	}
 
-
-	public Evaluation(DetailBulletin detail, Integer note, String appreciation) {
+    /**
+     *
+     * @param detail
+     * @param note
+     * @param appreciation
+     */
+    public Evaluation(DetailBulletin detail, Integer note, String appreciation) {
 		this.detail = detail;
 		this.note = note;
 		this.appreciation = appreciation;
 	}
 
-	
-	public Evaluation(Integer id, DetailBulletin detail, Integer note, String appreciation) {
+    /**
+     *
+     * @param id
+     * @param detail
+     * @param note
+     * @param appreciation
+     */
+    public Evaluation(Integer id, DetailBulletin detail, Integer note, String appreciation) {
 		this(detail,note,appreciation);
 		this.id = id;
 	}

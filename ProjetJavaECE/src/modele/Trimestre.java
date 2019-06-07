@@ -18,16 +18,32 @@ public class Trimestre {
 	private Date dateDebut;
 	private Date dateFin;
 	
-	public Trimestre() {
+    /**
+     *
+     */
+    public Trimestre() {
 	}
 	
-	public Trimestre(Integer numero, Date dateDebut, Date dateFin) {
+    /**
+     *
+     * @param numero
+     * @param dateDebut
+     * @param dateFin
+     */
+    public Trimestre(Integer numero, Date dateDebut, Date dateFin) {
 		this.numero = numero;
 		this.dateDebut = dateDebut;
 		this.dateFin = dateFin;
 	}
 
-	public Trimestre(Integer id, Integer numero, Date dateDebut, Date dateFin) {
+    /**
+     *
+     * @param id
+     * @param numero
+     * @param dateDebut
+     * @param dateFin
+     */
+    public Trimestre(Integer id, Integer numero, Date dateDebut, Date dateFin) {
 		this(numero,dateDebut ,dateFin);
 		this.id = id;
 	}

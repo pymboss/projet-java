@@ -16,15 +16,22 @@ import vue.Connexion_Win;
  */
 public class ECE {
     
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-    
-    Connect c = new Connect();
-        try {
-        Connexion_Win connexion_Win = new Connexion_Win();
-        } catch (SQLException ex) {
-            Logger.getLogger(ECE.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    
+        
+        java.awt.EventQueue.invokeLater(new Runnable(){
+         
+            public void run(){
+                
+               Connexion_Win c = new Connexion_Win();
+               c.setVisible(true);
+            }  
+     
+        });
+        
     }
     
 }

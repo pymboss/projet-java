@@ -1,24 +1,19 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package controleur;
 
-/*
- * 
- * Librairies importées
- */
 import java.sql.*;
 import java.util.ArrayList;
 
 /**
- * 
- * Connexion a votre BDD locale ou à distance sur le serveur de l'ECE via le tunnel SSH
- * 
- * @author segado
+ *
+ * @author pymas
  */
 public class Connexion {
-
+    
     /**
      * Attributs prives : connexion JDBC, statement, ordre requete et resultat
      * requete
@@ -56,11 +51,13 @@ public class Connexion {
         // url de connexion "jdbc:mysql://localhost:3305/usernameECE"
         String urlDatabase = "jdbc:mysql://localhost/" + nameDatabase;
 
-        //création d'une connexion JDBC à la base 
+        //création d'une connexion JDBC à la base
         conn = DriverManager.getConnection(urlDatabase, loginDatabase, passwordDatabase);
 
         // création d'un ordre SQL (statement)
         stmt = conn.createStatement();
+        
+        System.out.println("Connecté");
     }
 
     /**
@@ -73,13 +70,7 @@ public class Connexion {
      * @throws java.sql.SQLException
      * @throws java.lang.ClassNotFoundException
      */
-    public Connexion(String usernameECE, String passwordECE, String loginDatabase, String passwordDatabase) throws SQLException, ClassNotFoundException {
-        // chargement driver "com.mysql.jdbc.Driver"
-        Class.forName("com.mysql.jdbc.Driver");
-
-        // Connexion via le tunnel SSH avec le username et le password ECE
-        Connection cxs = DriverManager.getConnection("jdbc:mysql://localhost/test", "root", "");
-    }
+    
 
     /**
      * Méthode qui ajoute la table en parametre dans son ArrayList
@@ -149,7 +140,7 @@ public class Connexion {
     /**
      * Methode qui retourne l'ArrayList des champs de la requete en parametre
      * @param requete
-     * @return 
+     * @return
      * @throws java.sql.SQLException
      */
     public ArrayList remplirChampsRequete(String requete) throws SQLException {
@@ -166,7 +157,7 @@ public class Connexion {
         ArrayList<String> liste;
         liste = new ArrayList<String>();
 
-        // tant qu'il reste une ligne 
+        // tant qu'il reste une ligne
         while (rset.next()) {
             String champs;
             champs = rset.getString(1); // ajouter premier champ
